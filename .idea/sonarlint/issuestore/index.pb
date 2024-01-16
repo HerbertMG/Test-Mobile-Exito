@@ -27,3 +27,6 @@ Y
 +src/test/java/steps/common/commonSteps.java,1\3\13c76ab9ddb2c604bbe22bd73e6e31b0d4a9083f
 ^
 .src/main/java/userinterface/EcommercePage.java,1\0\10246bf2d1e1fda7021027af0a4be9aea5c5357d
+:
+
+.gitignore,a\5\a5cc2925ca8258af241be7e5b0381edf30266302
