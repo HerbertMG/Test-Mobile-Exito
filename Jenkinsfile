@@ -13,13 +13,13 @@ pipeline {
 
         stage('Build'){ // Descargamos las dependencias
             steps{
-                sh 'gradle build'
+                bat 'gradle build'
             }
         }
 
         stage('Tests'){ // Ejecutamos el runner del proyecto
             steps{
-                sh 'gradle test'
+                bat 'gradle test'
             }
         }
     } 
