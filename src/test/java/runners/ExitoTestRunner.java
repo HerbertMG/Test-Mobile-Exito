@@ -10,7 +10,7 @@ import org.junit.runner.RunWith;
         plugin = {"pretty"},
         features = "src/test/resources/features",
         glue = "steps",
-        tags = "@Regression",
+        tags = "@Regression1",
         snippets = CucumberOptions.SnippetType.CAMELCASE
 )
 public class ExitoTestRunner {
