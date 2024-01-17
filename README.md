@@ -6,6 +6,10 @@ para la creación de un framework de automatización que permita probar el apk d
 Este proyecto ha sido desarrollado por [Herbert Melendez](https://www.linkedin.com/in/herb-me-ga/) para mejorar en el
 desarrollo en pruebas avanzadas de mobile automation.
 
+<p align="center">
+  <img src="src/test/resources/evidencias/1_app_device_emulate_open.png"/>
+</p>
+
 ***
 
 ## Detalles del Tester
@@ -66,7 +70,7 @@ Test diseñados para validar los escenarios **Happy Paths** 😃
 ***
 > **✨ FEATURE**: Como usuario de la APP de la tienda EXITO, 
 quiero agregar productos al carrito,para gestionar mis compras.
-
+>
 > - [x] [TEST-001] - Validar registro de cuenta de Usuario
 >
 > - [x] [TEST-002] - Validar inicio de sesion de la cuenta de Usuario
@@ -78,7 +82,7 @@ quiero agregar productos al carrito,para gestionar mis compras.
 
 ## 🏗️ Estructura del proyecto
 
-El proyecto tiene scripts de compilación para MAVEN las dependencias se encuentran en el archivo pom.xml y sigue la estructura la siguiente estructura basada en el patrón
+El proyecto tiene scripts de compilación para GRADLE las dependencias se encuentran en el archivo build.gradle y sigue la siguiente estructura basada en el patrón
 de diseño de Screenplay:
 
 ```Gherkin
@@ -114,30 +118,65 @@ serenity.properties                     | General properties Serenity
 2. **CD** en la carpeta `TestAndroidExito`.
 3. Configurar Gradle
     * Ejecute el siguiente comando en el terminal:`./gradlew build`.
-    * Ejecute el siguiente comando en el terminal:`./gradlew clean test --info`.
+    
 
 ***
 
 4. Ejecutar las pruebas en el proyecto
-* Ir a las clases de la carpeta **runners** `src/test/java/runners/ExitoTestRunner.java` y ejecutar
+* **Opción 1:** Ejecute el siguiente comando en el terminal:`./gradlew clean test --info`.
+
+<p align="center">
+  <img src="src/test/resources/evidencias/2_gradlew_clean_test.png"/>
+</p>
+
+* **Opción 2:** Ir a las clases de la carpeta **runners** `src/test/java/runners/ExitoTestRunner.java` y ejecutar
   el Runner.
+
+<p align="center">
+  <img src="src/test/resources/evidencias/3_test_runner.png"/>
+</p>
 
 ***
 
 ## 📄 Generación de informes
 
 El informe al detalle con los pasos y resultados de las pruebas que se registrará en la ruta:
-`TestAndroidExito\target\site\serenityindex.html`.
+`TestAndroidExito/target/site/serenity/index.html`, así mismo se indica en la consola la ruta para el detalle de un escenario específico 
+`TestAndroidExito/target/site/serenity/#######.html`
+
+<p align="center">
+  <img src="src/test/resources/evidencias/4_test_result_2.png"/>
+</p>
+
+* Archivo `index.html` resultado global.
+
+<p align="center">
+  <img src="src/test/resources/evidencias/5_index_.png"/>
+</p>
+
+* Archivo `#######.html` resultado especifico del escenario.
+
+<p align="center">
+  <img src="src/test/resources/evidencias/6_case_details.png"/>
+</p>
+
 
 Adicional se genera un reporte single page si se desea una revisión de alto nivel sobre los resultados de los test, el
-cual se registrará en la ruta:
-`target/site/serenity/serenity-summary.html`.
+cual se registrará en la ruta: `TestAndroidExito/target/site/serenity/serenity-summary.html`.
 
-Este comando permitirá generar ambos reportes:
+Este comando permitirá generar el reporte:
+
 
 ```bash
 ./gradlew reports
-
 ```
+
+
+
+<p align="center">
+  <img src="src/test/resources/evidencias/7_gradlew_reports.png"/>
+</p>
+
+Este proyecto ha sido desarrollado por [Herbert Melendez](https://www.linkedin.com/in/herb-me-ga/)
 
 ***
