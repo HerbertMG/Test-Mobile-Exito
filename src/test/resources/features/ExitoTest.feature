@@ -14,7 +14,7 @@ Característica: Como usuario de la APP de la tienda EXITO, quiero agregar produ
     Cuando inicie sesion con las credenciales de un ususario existente
     Entonces podra ingresar al home de la aplicacion
 
-  @Regression1
+  @Regression
   Esquema del escenario: [TEST-003] - Validar producto en el carrito
     Dado que un usuario se encuentra en el home de la aplicacion
     Cuando necesite comprar un producto para recoger en tienda
